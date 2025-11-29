@@ -1,0 +1,4 @@
+//check stringlength
+//create variable to store string
+//use loop to start from last index
+//add character at each index to variable
