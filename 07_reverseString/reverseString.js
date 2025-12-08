@@ -1,9 +1,10 @@
 const reverseString = function(string) {
   let length = string.length - 1;
-  let newString;
+  let newString = '';
   for (i = length; i > -1; i--) {
-   //character an index  
+    newString += string.at(i);
   }
+  return newString;
    
 };
 
