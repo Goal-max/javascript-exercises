@@ -1,4 +1,8 @@
 const sumAll = function(a,b) {
+  if( a < 0 | b < 0 | !Number.isInteger(a) | !Number.isInteger(b) | !Number.isFinite(a) | !Number.isFinite(b)) {
+    return 'ERROR'
+  }
+  else {
   let array = [a,b];
   array.sort();
   let diff = array[1] - array[0];
@@ -10,6 +14,7 @@ const sumAll = function(a,b) {
   
   let sum = array.reduce((sum, current) => sum + current, 0);
   return sum;
+  }
 };
 
 // Do not edit below this line
