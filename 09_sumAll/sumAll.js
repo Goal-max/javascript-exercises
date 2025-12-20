@@ -1,9 +1,16 @@
 const sumAll = function(a,b) {
-  if( a < 0 | b < 0 | !Number.isInteger(a) | !Number.isInteger(b) | !Number.isFinite(a) | !Number.isFinite(b)) {
+  let array = [a,b];
+  let test = '';
+  for (element of array) {
+    if (element < 0 | !Number.isInteger(element) | !Number.isFinite(element)) {
+      test = 'incorrect'
+      break;
+    }   
+  }
+  if (test === 'incorrect') {
     return 'ERROR'
   }
   else {
-  let array = [a,b];
   array.sort();
   let diff = array[1] - array[0];
   
